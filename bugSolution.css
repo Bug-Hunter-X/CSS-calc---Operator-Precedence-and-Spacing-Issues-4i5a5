@@ -1,0 +1,19 @@
+/* Correctly using calc() */
+
+.container {
+  width: calc(100% - 50px); /* Correct: 100% minus 50px */
+}
+
+.element {
+  height: calc((100px + 50px) / 2); /* Correct: (100px + 50px) divided by 2 */
+}
+
+/* Incorrect use of calc() - Missing spaces */
+/*.element {
+  height: calc(100px+50px/2); /* Incorrect: operator precedence and missing spaces */
+}*/
+
+/* Incorrect use of calc() - incorrect precedence */
+/*.element {
+  height: calc(100px + 50px / 2); /* Incorrect: operator precedence */
+}*/
